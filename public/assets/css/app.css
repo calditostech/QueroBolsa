@@ -18,3 +18,103 @@
     margin-top: 250px;
     margin-left: 600px;
 }
+      
+   /* Logo do menu */             
+.container-md {
+    background-color: #DAA520;
+    height: 80px;
+    width: 310px;
+    margin-top: -15px;
+    margin-left: -55px;
+
+}
+
+.barra-logo {
+    background-color: #FFD700;
+}
+
+.painel-texto {
+    color: rgb(3,8,12);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.indexrop {
+    font-size: 12px;
+    margin-left: 130px;
+    margin-top: -20px;
+}
+
+.logo-home {
+    width: 130px;
+    height: 80px;
+    margin-left: 800px;
+    margin-top: -50px;
+}
+
+/* menu retratil */
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+	color: #000;
+}
+
+.menu-hidde {
+	background: #333 none repeat scroll 0% 0%;
+	width: 260px;
+	height: 100%;
+	position: absolute;
+}
+
+.menu-hidde li {
+    color: rgb(32, 28, 28);
+    font-size: 20px;
+    padding: 18px;
+    cursor: pointer;
+}
+.menu-hidde ul {
+    position: absolute;
+    top: 31px;
+}
+
+.dropdown-item {
+  color: aliceblue;
+  margin-top: -40px;
+  font-size: 16px;
+} 
+
+.nav-link dropdown-toggle {
+    color: #FFD700;
+}
+
+#titulo-dash {
+    color: #FFD700;
+}
+
+#titulo-cadastro {
+    color: #FFD700;
+}
+
+#titulo-gerencia {
+    color: #FFD700;
+}
+
+#titulo-financeiro {
+    color: #FFD700;
+}
+
+#titulo-mkt {
+    color: #FFD700;
+}
+
+
+.dropdown-menu {
+    background-color: #333; 
+    height: 30px; 
+    margin-top: -70px;
+}
