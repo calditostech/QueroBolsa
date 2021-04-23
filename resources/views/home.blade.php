@@ -9,44 +9,6 @@
   </div>
 </nav>
 
-<!--menu retratil -->
-<!--<div id="lateral">
-<div id="menu">
-  			
-<h3 class="link-titulo">CADASTROS</h3>
-  <ul class="box">					
-    <li><a href="#">CIDADES</a></li>
-    <li><a href="#">LOJAS</a></li>
-    <li ><a href="#">CATEGORIAS</a></li>
-    <li ><a href="#">PRODUTOS</a></li>
-  </ul>
-
-<h3 class="link-titulo">GERENCIAMENTO</h3>
-  <ul class="box">
-  <li><a href="#">CIDADES</a></li>
-    <li><a href="#">LOJAS</a></li>
-    <li ><a href="#">CATEGORIAS</a></li>
-    <li ><a href="#">PRODUTOS</a></li>
-    <li ><a href="#">USUARIOS</a></li>
-  </ul>
-
-<h3 class="link-titulo">FINANCEIRO</h3>
-  <ul class="box">					
-    <li><a href="#">RELATORIOS</a></li> 			
-    <li><a href="#">COBRANÇAS</a></li> 			
-  </ul>
-
-<h3 class="link-titulo">MARKETING</h3>
-  <ul class="box">
-    <li><a href="#">PUSHS</a></li>
-  </ul> -->
-    
-<!-- mais seções --> 
-
-<!--</div>--> <!-- /#menu -->
-<!--</div id="link"> --><!-- vazio --><!-- <div>
-</div>--> <!-- /#lateral -->
-
 <!-- Menu Retratil -->
 <nav class="sidebar">
   <div class="text">MENU</div>
