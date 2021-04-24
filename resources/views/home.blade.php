@@ -13,10 +13,11 @@
 <nav class="sidebar">
   <div class="text">MENU</div>
   <ul>
-     <li><a href="#"><ion-icon name="podium-outline" style="color:white; margin-left: -20px;"></ion-icon>
-</ion-icon>  DASHBOARD</a><li>
+     <li><a href="#"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
+      <p class="dash-paragrafo">DASHBOARD</p></a><li>
      <li>
-       <a href="#" class="feat-btn"><ion-icon name="add-outline" style="color:white; margin-left: -20px;"></ion-icon> CADASTROS
+       <a href="#" class="feat-btn"><img src = "{{ url('assets/img/icon2.png') }}" class="logo-cadastro">
+       <p class="cadastro-paragrafo">CADASTROS</p>
          <span class="fas fa-caret-down first"></span>
        </a>
        <ul class="feat-show">
@@ -25,8 +26,8 @@
        </ul>
      </li>
      <li>
-       <a href="#" class="serv-btn"><ion-icon name="create-outline" style="color:white; margin-left: -20px;"></ion-icon>
-   GERENCIAMENTO
+       <a href="#" class="serv-btn"><img src = "{{ url('assets/img/icon3.png') }}" class="logo-gerencia">
+          <p class="gerencia-paragrafo">GERENCIAMENTO</p>
        <span class="fas fa-caret-down second"></span>
        </a>
        <ul class="serv-show">
@@ -35,7 +36,8 @@
        </ul>
      </li>
      <li>
-       <a href="#" class="serv-btn"><ion-icon name="cash-outline" style="color:white; margin-left:-20px;"></ion-icon>  FINANCEIRO
+       <a href="#" class="serv-btn"><img src = "{{ url('assets/img/icon4.png') }}" class="logo-financeiro">
+          <p class="financeiro-paragrafo">FINANCEIRO</p>
        <span class="fas fa-caret-down second"></span>
        </a>
        <ul class="serv-show">
@@ -44,7 +46,8 @@
        </ul>
      </li>
      <li>
-       <a href="#" class="serv-btn"><ion-icon name="pulse-outline" style="color:white;margin-left: -20px; "></ion-icon>  MARKETING
+       <a href="#" class="serv-btn"><img src = "{{ url('assets/img/icon5.png') }}" class="logo-marketing">
+            <p class="marketing-paragrafo">MARKETING</p>
        <span class="fas fa-caret-down second"></span>
        </a>
        <ul class="serv-show">
@@ -58,21 +61,21 @@
 <div class="row"style="margin-top: 20px; margin-top: 100px;">
   <div class="column" style="background-color:white;">
     <div class="box-blue" style="height: 100px; width: 140px; background-color: #1E90FF; margin-top: -30px; margin-left: -30px;">
-    <ion-icon name="accessibility-outline"></ion-icon>
+    <img src = "{{ url('assets/img/icone users dashboard.png') }}" class="logo-users">
     </div>
     <h2 class="newuser"><b>NOVOS USUARIOS</b></h2>
     <p class="valorusuarios"><b>1350</b></p>
   </div>
   <div class="column" style="background-color:white; margin-left:400px; margin-top:-100px; ">
      <div class="box-red" style="height: 100px; width: 140px; background-color: #FF0000; margin-top: -30px; margin-left: -30px;">
-        
+     <img src = "{{ url('assets/img/icone sales dashboard.png') }}" class="logo-cart">
      </div>
     <h2 class="oferta"><b>OFERTAS VENDIDAS</b></h2>
     <p class="valorofertas"><b>58</b></p>
   </div>
   <div class="column" style="background-color:white; margin-left:800px; margin-top:-100px;">
     <div class="box-green"style="height: 100px; width: 140px; background-color: #008B00; margin-top: -30px; margin-left: -30px;">
-        
+    <img src = "{{ url('assets/img/cart icon dashboard.png') }}" class="logo-sales"> 
     </div>
     <h2 class="totalvendas"><b>TOTAL EM VENDAS</b></h2>
     <p class="valortotal"><b>R$1.740,92</b></p>

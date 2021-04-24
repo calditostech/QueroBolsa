@@ -143,6 +143,7 @@
     left: 0;
     background: #1b1b1b;
     margin-top: -30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sidebar .text{
@@ -156,8 +157,8 @@
 }
 
 nav ul{
-    background:rgba(255, 255, 255, 0.1);
-    height: 100%;
+    background: #1b1b1b;
+    height: 40%;
     width: 100%;
     list-style: none;
 }
@@ -194,8 +195,9 @@ nav ul ul{
     display: none;
 }
 
-nav ul .feat-show .show{
+nav ul {
     display: block;
+    
 }
 
 nav ul .serv-show .show1{
@@ -242,6 +244,7 @@ nav ul li a span.rotate{
 
  body{ 
      background: #ddd;
+     font-family: 'Roboto', sans-serif;
  }
 .text-dash{
     margin-left: 300px;
@@ -398,4 +401,167 @@ nav ul li a span.rotate{
     font-size: 22px;
     margin-left: 10px;
     margin-top: 10px;
+}
+
+/* icones da home */
+
+.logo-dashboard {
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.logo-cadastro {
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.logo-gerencia {
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.logo-financeiro {
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.logo-marketing {
+    margin-left: -30px;
+    margin-top: 40px;
+}
+
+.dash-paragrafo {
+    margin-top: -40px;
+}
+
+.cadastro-paragrafo {
+    margin-top: -40px;
+}
+
+.gerencia-paragrafo {
+    margin-top: -40px;
+}
+
+.financeiro-paragrafo {
+    margin-top: -40px;
+}
+
+.marketing-paragrafo {
+    margin-top: -40px;
+}
+
+.logo-users{
+    height: 40px;
+    width: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.logo-cart{
+    height: 40px;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.logo-sales{
+    height: 40px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+/*barra menu gerenciamento lojas */
+.container-md-lojas-gerencia {
+    background-color: #DAA520;
+    height: 70px;
+    width: 310px;
+    margin-left: -55px;
+    position: fixed;
+    margin-top: -152px;
+}
+
+.barra-gerencia-loja {
+    background-color: #FFD700;
+    margin-left: 290px;
+    height: 70px;
+    position: fixed;
+    width: 1900px;
+    margin-top: -0px;
+}
+
+.painel-gerencia-loja {
+    color: rgb(3,8,12);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: -2150px;
+    text-align: center;
+}
+
+
+.indexlojas {
+    font-size: 12px;
+    margin-left: -180px;
+    margin-top: -20px;
+}
+
+.logo-cadastro-lojas {
+    width: 130px;
+    height: 80px;
+    margin-left: 500px;
+    margin-top:  -80px;
+}
+
+.sidebar-gerencia-loja{
+    position: fixed;
+    width: 235px;
+    height: 100%;
+    left: 0;
+    background: #1b1b1b;
+    margin-top: -82px;
+}
+
+.sidebar-gerencia-loja .text{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 65px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: 1px;
+}
+
+.container-lojas{
+    background: #ddd;
+    width: 1200px;
+    height: 1200px;
+    margin-left: 300px;
+    margin-top: 150px;
+
+}
+
+.text-gerencia-lojas{
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.logo-gerencia-lojas {
+    width: 130px;
+    height: 80px;
+    margin-left: 500px;
+    margin-top:  -70px;
+}
+
+.container-lojas-gerencia{
+    background: #ddd;
+    width: 1200px;
+    height: 1200px;
+    margin-left: 300px;
+    margin-top: 150px;
+
+}
+
+.feat-show{
+   color: whitesmoke;
 }

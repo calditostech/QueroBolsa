@@ -9,23 +9,27 @@
   </div>
 </nav>
   
+<!-- Menu Retratil -->
 <nav class="sidebar-cadastro-loja">
   <div class="text">MENU</div>
   <ul>
-     <li><a href="#"><ion-icon name="podium-outline" style="color:white; margin-left: -20px;"></ion-icon>
-</ion-icon>  DASHBOARD</a><li>
+     <li><a href="#"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
+      <p class="dash-paragrafo">DASHBOARD</p></a><li>
      <li>
-       <a href="#" class="feat-btn"><ion-icon name="add-outline" style="color:white; margin-left: -20px;"></ion-icon> CADASTROS
+       <a href="#" class="feat-btn"><img src = "{{ url('assets/img/icon2.png') }}" class="logo-cadastro">
+       <p class="cadastro-paragrafo">CADASTROS</p>
          <span class="fas fa-caret-down first"></span>
        </a>
        <ul class="feat-show">
-         <li><a href="#">Pages</a></li>
-         <li><a href="#">Elements</a></li>
+         <li><a href="#">CIDADES</a></li>
+         <li><a href="#">LOJAS</a></li>
+         <li><a href="#">CATEGORIAS</a></li>
+         <li><a href="#">PRODUTOS</a></li>
        </ul>
      </li>
      <li>
-       <a href="#" class="serv-btn"><ion-icon name="create-outline" style="color:white; margin-left: -20px;"></ion-icon>
-   GERENCIAMENTO
+       <a href="#" class="serv-btn"><img src = "{{ url('assets/img/icon3.png') }}" class="logo-gerencia">
+          <p class="gerencia-paragrafo">GERENCIAMENTO</p>
        <span class="fas fa-caret-down second"></span>
        </a>
        <ul class="serv-show">
@@ -34,7 +38,8 @@
        </ul>
      </li>
      <li>
-       <a href="#" class="serv-btn"><ion-icon name="cash-outline" style="color:white; margin-left:-20px;"></ion-icon>  FINANCEIRO
+       <a href="#" class="serv-btn"><img src = "{{ url('assets/img/icon4.png') }}" class="logo-financeiro">
+          <p class="financeiro-paragrafo">FINANCEIRO</p>
        <span class="fas fa-caret-down second"></span>
        </a>
        <ul class="serv-show">
@@ -43,7 +48,8 @@
        </ul>
      </li>
      <li>
-       <a href="#" class="serv-btn"><ion-icon name="pulse-outline" style="color:white;margin-left: -20px; "></ion-icon>  MARKETING
+       <a href="#" class="serv-btn"><img src = "{{ url('assets/img/icon5.png') }}" class="logo-marketing">
+            <p class="marketing-paragrafo">MARKETING</p>
        <span class="fas fa-caret-down second"></span>
        </a>
        <ul class="serv-show">
@@ -52,7 +58,6 @@
      </li>
   </ul>
 </nav>
-
 <!-- Cadastro Lojas -->
 <div class="container-lojas">
 <h3 class="text-cadastro-lojas"><b>CADASTRO ></b> CADASTRO DE LOJAS</h3>

@@ -26,3 +26,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/cadastros/lojas', function () {
     return view('cadastros.lojas');
 });
+
+Route::get('/gerenciamento/lojas', function () {
+    return view('gerenciamento.lojas');
+});
