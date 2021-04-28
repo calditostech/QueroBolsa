@@ -2,17 +2,17 @@
 
 @section('content')
 <!-- Barra do logo -->
-  <div class="container-md-cidades">
-  <nav class="barra-cadastro-cidades">
-    <p class="painel-cadastro-cidades" href="/">Painel<b>Quero</b> 1.0<br><p class="indexrop">Index de Roupas</p></p>
+  <div class="container-gerencia-categorias">
+  <nav class="barra-gerencia-categorias">
+    <p class="painel-gerencia-categorias" href="/">Painel<b>Quero</b> 1.0<br><p class="indexrop">Index de Roupas</p></p>
     <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-cidades">
   </div>
 </nav>
 
 <!-- Menu Retratil -->
-<nav class="sidebar-cidades-cadastro">
+<nav class="sidebar-gerencia-categorias">
   <ul>
-     <li><a href="/home"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
+     <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
      <li>
        <a href="#" class="feat-btn"><img src = "{{ url('assets/img/icon2.png') }}" class="logo-cadastro">
@@ -37,6 +37,9 @@
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/categorias">CATEGORIAS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/produtos">PRODUTOS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/usuarios">USUARIOS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/revisaoofertas">REVISÃODEOFERTAS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/funcaoadm">FUNÇÃOADM</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/configuracao">CONFIGURAÇÕES</a></li>
        </ul>
      </li>
      <li>
@@ -61,6 +64,35 @@
   </ul>
 </nav>
 
+<div class="row"  style="width: 1200px; margin-top: 150px;">
+  <div class="column" style="background-color:white; height: 300px; width: 1380px; margin-top:-20px;">
+    <h2 style="font-size:18px;">EDITAR<b> > CATEGORIAS</b></h2>
+    <table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">CATEGORIAS</th>
+      <th scope="col" style="margin-top:5px;">ATIVAR CATEGORIA</th>
+      <th scope="col">EDITAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">CAMISETA</th>
+      <td style="color:green;">ATIVADO</td>
+      <td><button type="button" class="btn btn-success">EDITAR</button></td>
+    </tr>
+    <tr>
+      <th scope="row">TENIS</th>
+      <td style="color:red;">DESATIVAR</td>
+      <td><button type="button" class="btn btn-success">EDITAR</button></td>
+    </tr>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,6 +105,15 @@ $(document).ready(function(){
    $(".feat-btn").click(function(){
     $(".feat-show").show();
   });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("height", "150px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("font-size", "12px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("padding", "2px");
+  });
 });
 
 // função do menu modulo gerenciamento
@@ -82,6 +123,15 @@ $(document).ready(function(){
   });
    $(".serv-btn").click(function(){
     $(".serv-show").show();
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("height", "300px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("font-size", "12px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("padding", "2px");
   });
 });
 

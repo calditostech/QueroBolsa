@@ -12,7 +12,7 @@
 <!-- Menu Retratil -->
 <nav class="sidebar-cidades-cadastro">
   <ul>
-     <li><a href="/home"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
+     <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
      <li>
        <a href="#" class="feat-btn"><img src = "{{ url('assets/img/icon2.png') }}" class="logo-cadastro">
@@ -37,6 +37,9 @@
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/categorias">CATEGORIAS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/produtos">PRODUTOS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/usuarios">USUARIOS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/revisaoofertas">REVISÃODEOFERTAS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/funcaoadm">FUNÇÃOADM</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/configuracao">CONFIGURAÇÕES</a></li>
        </ul>
      </li>
      <li>
@@ -61,6 +64,45 @@
   </ul>
 </nav>
 
+<div class="container-cidade-cadastro" style="margin-top: 150px; margin-left: 380px;">
+<h3 class="text-cadastro-cidades"><b>CADASTRO ></b> CIDADES</h3>
+<form action="/action_page.php" style="margin-top: 40px;">
+  <h5><b>CADASTRAR NOVA CIDADE:</b></h5><br>
+  <label for="fname" style="margin-left: -55px;">NOME DA CIDADE:</label>
+  <input type="text" id="fname" name="fname" value="" style="margin-left: 10px; width: 350px;">
+  <label for="estados" style="margin-left: 45px;">ESTADOS :</label>
+     <select name="estados" id="estados">
+        <option value="riograndedosul">RIO GRANDE SO SUL</option>
+        <option value="santacatarina">SANTA CATARINA</option>
+        <option value="parana">PARANA</option>
+        <option value="saopaulo">SÃO PAULO</option>
+        <option value="riodejaneiro">RIO DE JANEIRO</option>
+        <option value="espiritosanto">ESPIRITO SANTO</option>
+        <option value="minasgerais">MINAS GERAIS</option>
+        <option value="matogrossodosul">MATO GROSSO DO SUL</option>
+        <option value="matogrosso">MATO GROSSO</option>
+        <option value="goias">GOIAS</option>
+        <option value="maranhao">MARANHÃO</option>
+        <option value="piaui">PIAUI</option>
+        <option value="ceara">CEARA</option>
+        <option value="riograndedonorte">RIO GRANDE DO NORTE</option>
+        <option value="paraiba">PARAIBA</option>
+        <option value="pernambuco">PERNAMBUCO</option>
+        <option value="alagoas">ALAGOAS</option>
+        <option value="sergipe">SERGIPE</option>
+        <option value="salvador">SALVADOR</option>
+        <option value="acre">ACRE</option>
+        <option value="amazonas">AMAZONAS</option>
+        <option value="rondonia">RONDONIA</option>
+        <option value="tocantins">TOCANTINS</option>
+        <option value="para">PARA</option>
+        <option value="roraima">RORAIMA</option>
+        <option value="amapa">AMAPA</option>
+        <option value="distritofederal">DISTRITO FEDERAL</option>
+     </select><br><br>
+     <input type="submit" id="fname" name="fname" value="CADASTRAR" style="margin-left: 90px;">
+</div>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,6 +115,15 @@ $(document).ready(function(){
    $(".feat-btn").click(function(){
     $(".feat-show").show();
   });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("height", "150px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("font-size", "12px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("padding", "2px");
+  });
 });
 
 // função do menu modulo gerenciamento
@@ -83,8 +134,16 @@ $(document).ready(function(){
    $(".serv-btn").click(function(){
     $(".serv-show").show();
   });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("height", "300px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("font-size", "12px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("padding", "2px");
+  });
 });
-
 // função do menu modulo financeiro
 $(document).ready(function(){
   $(".finan-btn").click(function(){

@@ -12,7 +12,7 @@
 <!-- Menu Retratil -->
 <nav class="sidebar">
   <ul>
-     <li><a href="/home"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
+     <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
      <li>
        <a href="#" class="feat-btn"><img src = "{{ url('assets/img/icon2.png') }}" class="logo-cadastro">
@@ -37,6 +37,9 @@
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/categorias">CATEGORIAS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/produtos">PRODUTOS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/usuarios">USUARIOS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/revisaoofertas">REVISÃODEOFERTAS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/funcaoadm">FUNÇÃOADM</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/configuracao">CONFIGURAÇÕES</a></li>
        </ul>
      </li>
      <li>
@@ -173,6 +176,15 @@ $(document).ready(function(){
    $(".feat-btn").click(function(){
     $(".feat-show").show();
   });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("height", "150px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("font-size", "12px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("padding", "2px");
+  });
 });
 
 // função do menu modulo gerenciamento
@@ -182,6 +194,15 @@ $(document).ready(function(){
   });
    $(".serv-btn").click(function(){
     $(".serv-show").show();
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("height", "300px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("font-size", "12px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("padding", "2px");
   });
 });
 

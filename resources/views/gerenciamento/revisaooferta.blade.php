@@ -2,16 +2,15 @@
 
 @section('content')
 <!-- Barra do logo -->
-<div class="container-md-financia-cidade">
-  <nav class="barra-financia-loja">
-    <p class="painel-financia-loja" href="/">Painel<b>Quero</b> 1.0<br><p class="indexlojas">Index de Roupas</p></p>
-    <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-gerencia-lojas">
+  <div class="container-gerencia-revisao">
+  <nav class="barra-gerencia-revisao">
+    <p class="painel-gerencia-revisao" href="/">Painel<b>Quero</b> 1.0<br><p class="indexrop">Index de Roupas</p></p>
+    <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-cidades">
   </div>
 </nav>
-  
+
 <!-- Menu Retratil -->
-<!-- Menu Retratil -->
-<nav class="sidebar-financia">
+<nav class="sidebar-gerencia-revisao">
   <ul>
      <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
@@ -65,6 +64,36 @@
   </ul>
 </nav>
 
+<div class="row"  style="width: 1200px; margin-top: 150px;">
+  <div class="column" style="background-color:white; height: 300px; width: 1380px; margin-top:-20px;">
+    <h2 style="font-size:18px;">EDITAR<b> > PRODUTOS</b></h2>
+    <table class="table table-borderless">
+  <thead>
+    <tr>
+      <th scope="col">CATEGORIAS</th>
+      <th scope="col" style="margin-top:5px;">MEDIDA</th>
+      <th scope="col">EDITAR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">CAMISETA</th>
+      <td>M</td>
+      <td><button type="button" class="btn btn-success">EDITAR</button></td>
+    </tr>
+    <tr>
+      <th scope="row">TENIS</th>
+      <td>40</td>
+      <td><button type="button" class="btn btn-success">EDITAR</button></td>
+    </tr>
+    <tr>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -105,7 +134,6 @@ $(document).ready(function(){
     $(".serv-show").css("padding", "2px");
   });
 });
-
 // função do menu modulo financeiro
 $(document).ready(function(){
   $(".finan-btn").click(function(){

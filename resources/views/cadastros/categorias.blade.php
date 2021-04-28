@@ -12,7 +12,7 @@
 <!-- Menu Retratil -->
 <nav class="sidebar-categoria-cadastro">
   <ul>
-     <li><a href="/home"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
+     <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
      <li>
        <a href="#" class="feat-btn"><img src = "{{ url('assets/img/icon2.png') }}" class="logo-cadastro">
@@ -37,6 +37,9 @@
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/categorias">CATEGORIAS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/produtos">PRODUTOS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/usuarios">USUARIOS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/revisaoofertas">REVISÃODEOFERTAS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/funcaoadm">FUNÇÃOADM</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/configuracao">CONFIGURAÇÕES</a></li>
        </ul>
      </li>
      <li>
@@ -61,6 +64,14 @@
   </ul>
 </nav>
 
+<div class="container-cidade-categorias" style="margin-top: 150px; margin-left: 380px;">
+<h3 class="text-cadastro-cidades"><b>CADASTRO ></b> CATEGORIAS</h3>
+<form action="/action_page.php" style="margin-top: 40px;">
+  <h5><b>CADASTRAR CATEGORIA:</b></h5><br>
+  <label for="fname" style="margin-left: -55px;">NOME DA CATEGORIA:</label>
+  <input type="text" id="fname" name="fname" value="" style="margin-left: 10px; width: 350px;"><br><br>
+  <input type="submit" id="fname" name="fname" value="CADASTRAR" style="margin-left: 120px;">
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
@@ -72,6 +83,15 @@ $(document).ready(function(){
    $(".feat-btn").click(function(){
     $(".feat-show").show();
   });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("height", "150px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("font-size", "12px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("padding", "2px");
+  });
 });
 
 // função do menu modulo gerenciamento
@@ -81,6 +101,15 @@ $(document).ready(function(){
   });
    $(".serv-btn").click(function(){
     $(".serv-show").show();
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("height", "300px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("font-size", "12px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("padding", "2px");
   });
 });
 

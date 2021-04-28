@@ -64,6 +64,18 @@ Route::get('/gerenciamento/usuarios', function () {
     return view('gerenciamento.usuarios');
 });
 
+Route::get('/gerenciamento/revisaoofertas', function () {
+    return view('gerenciamento.revisaooferta');
+});
+
+Route::get('/gerenciamento/funcaoadm', function () {
+    return view('gerenciamento.funcaoadm');
+});
+
+Route::get('/gerenciamento/configuracao', function () {
+    return view('gerenciamento.configuracao');
+});
+
 /* Rotas financeiro */
 Route::get('/financeiro/cidades', function () {
     return view('financeiro.cidades');

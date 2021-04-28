@@ -2,16 +2,15 @@
 
 @section('content')
 <!-- Barra do logo -->
-<div class="container-md-financia-cidade">
-  <nav class="barra-financia-loja">
-    <p class="painel-financia-loja" href="/">Painel<b>Quero</b> 1.0<br><p class="indexlojas">Index de Roupas</p></p>
-    <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-gerencia-lojas">
+  <div class="container-gerencia-funcaoadm">
+  <nav class="barra-gerencia-funcaoadm">
+    <p class="painel-gerencia-funcaoadm" href="/">Painel<b>Quero</b> 1.0<br><p class="indexrop">Index de Roupas</p></p>
+    <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-cidades">
   </div>
 </nav>
-  
+
 <!-- Menu Retratil -->
-<!-- Menu Retratil -->
-<nav class="sidebar-financia">
+<nav class="sidebar-gerencia-funcaoadm">
   <ul>
      <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
@@ -65,7 +64,6 @@
   </ul>
 </nav>
 
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 // função do menu modulo cadastro
@@ -105,7 +103,6 @@ $(document).ready(function(){
     $(".serv-show").css("padding", "2px");
   });
 });
-
 // função do menu modulo financeiro
 $(document).ready(function(){
   $(".finan-btn").click(function(){

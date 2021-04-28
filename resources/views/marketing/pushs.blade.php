@@ -2,16 +2,16 @@
 
 @section('content')
 <!-- Barra do logo -->
-<div class="container-md-lojas-gerencia">
-  <nav class="barra-gerencia-loja">
-    <p class="painel-gerencia-loja" href="/">Painel<b>Quero</b> 1.0<br><p class="indexlojas">Index de Roupas</p></p>
+<div class="container-md-marketing">
+  <nav class="barra-gerencia-marketing">
+    <p class="painel-gerencia-marketing" href="/">Painel<b>Quero</b> 1.0<br><p class="indexlojas">Index de Roupas</p></p>
     <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-gerencia-lojas">
   </div>
 </nav>
   
 <!-- Menu Retratil -->
 <!-- Menu Retratil -->
-<nav class="sidebar">
+<nav class="sidebar-marketing">
   <ul>
      <li><a href="/home"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
@@ -38,6 +38,9 @@
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/categorias">CATEGORIAS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/produtos">PRODUTOS</a></li>
          <li><a href="http://localhost/QueroBolsa/public/gerenciamento/usuarios">USUARIOS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/revisaoofertas">REVISÃODEOFERTAS</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/funcaoadm">FUNÇÃOADM</a></li>
+         <li><a href="http://localhost/QueroBolsa/public/gerenciamento/configuracao">CONFIGURAÇÕES</a></li>
        </ul>
      </li>
      <li>
@@ -73,6 +76,15 @@ $(document).ready(function(){
    $(".feat-btn").click(function(){
     $(".feat-show").show();
   });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("height", "150px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("font-size", "12px");
+  });
+  $(".feat-btn").click(function(){
+    $(".feat-show").css("padding", "2px");
+  });
 });
 
 // função do menu modulo gerenciamento
@@ -82,6 +94,15 @@ $(document).ready(function(){
   });
    $(".serv-btn").click(function(){
     $(".serv-show").show();
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("height", "300px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("font-size", "12px");
+  });
+  $(".serv-btn").click(function(){
+    $(".serv-show").css("padding", "2px");
   });
 });
 

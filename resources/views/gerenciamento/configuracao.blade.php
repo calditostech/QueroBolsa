@@ -2,16 +2,15 @@
 
 @section('content')
 <!-- Barra do logo -->
-<div class="container-md-financia-cidade">
-  <nav class="barra-financia-loja">
-    <p class="painel-financia-loja" href="/">Painel<b>Quero</b> 1.0<br><p class="indexlojas">Index de Roupas</p></p>
-    <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-gerencia-lojas">
+  <div class="container-gerencia-configuracao">
+  <nav class="barra-gerencia-configuracao">
+    <p class="painel-gerencia-configuracao" href="/">Painel<b>Quero</b> 1.0<br><p class="indexrop">Index de Roupas</p></p>
+    <img src = "{{ url('assets/img/logoapp.png') }}" class="logo-cidades">
   </div>
 </nav>
-  
+
 <!-- Menu Retratil -->
-<!-- Menu Retratil -->
-<nav class="sidebar-financia">
+<nav class="sidebar-gerencia-configuracao">
   <ul>
      <li><a href="http://localhost/QueroBolsa/public/"><img src = "{{ url('assets/img/icon1.png') }}" class="logo-dashboard">
       <p class="dash-paragrafo">DASHBOARD</p></a><li>
@@ -64,7 +63,6 @@
      </li>
   </ul>
 </nav>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
