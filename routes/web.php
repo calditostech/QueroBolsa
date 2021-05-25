@@ -21,6 +21,15 @@ Route::get('/', function () {
 /* Rota Firebase */
 Route::get('/firebase', [FirebaseController::class, 'index']);
 
+Route::get('/insert', function() {
+    $stuRef = app('firebase.firestore')->database()->collection('Students')->newDocument();
+    $stuRef->set([
+        'firstname' => 'Seven',
+        'lastname' => 'Stac',
+        'age' => 19
+    ]);
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -89,4 +98,5 @@ Route::get('/financeiro/lojas', function () {
 Route::get('/marketing/pushs', function () {
     return view('marketing.pushs');
 });
+
 

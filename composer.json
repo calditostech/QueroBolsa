@@ -8,6 +8,8 @@
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
+        "google/cloud": "^0.153.0",
+        "google/cloud-firestore": "^1.19",
         "guzzlehttp/guzzle": "^7.0.1",
         "kreait/firebase-php": "^5.18",
         "kreait/laravel-firebase": "^3.1",

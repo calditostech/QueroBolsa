@@ -24,10 +24,10 @@ class FirebaseController extends Controller
 
     public function index()
     {
-        $serviceAccount = ServiceAccount::fromJsonFile(__DIR__.'google-service-account.json');
+        $serviceAccount = ServiceAccount::fromJsonFile(__DIR__.'/testequero-c7416-default-rtdb-export.json');
         $firebase = (new Factory)
             ->withServiceAccount($serviceAccount)
-            ->withDatabaseUri('https://laravel6firebase.firebaseio.com/')
+            ->withDatabaseUri('https://testequero-c7416-default-rtdb.firebaseio.com/')
             ->create();
         
             $database   =   $firebase->getDatabase();
